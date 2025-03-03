@@ -147,7 +147,7 @@ nav {
 
 /* Banner Section */
 .banner_home {
-    background-image:url("/assets/images/home-header.png");
+    background-image:url("./assets/images/home-header.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center center;
@@ -203,7 +203,7 @@ nav {
 
 /* design-glass */
 .design-glass {
-    background-image: url('/assets/images/img_index-bg.png');
+    background-image: url('./assets/images/img_index-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center center;
