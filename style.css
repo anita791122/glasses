@@ -1,0 +1,366 @@
+/* style.css */
+
+/* Reset & Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+@font-face {
+    font-family: 'Noto Sans TC' ;
+    src: url(https://fonts.google.com/noto/specimen/Noto+Sans+TC);
+}
+
+:root {
+    --primary:#AA0601;
+    --secondary:#FBF2F2;
+    --primary-dark:#650300;
+    --glay-dark:#707070;
+    --glay:#DEE2E6;
+}
+
+body {
+    font-family:Roboto, 'Noto Sans TC'; 
+    font-size: 16px;
+    line-height: 1.6;
+    color: #000;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--primary-dark);
+    font-weight: 800;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+.button {
+    color: #fff;
+    background-color: var(--primary);
+}
+
+.button:hover {
+    color: var(--primary);
+    background-color: #fff;
+    border: 1px solid var(--primary);
+}
+
+.container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    align-items: start;
+
+}
+
+section {
+    width: 100%;
+    padding: 5rem 0;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+.col-3 {
+    width: 40%;
+}
+
+.col-4 {
+    width: 30%;
+}
+
+.mb1 {
+    margin-bottom: 1rem;
+}
+
+.mb1-5{
+    margin-bottom: 1.5rem;
+}
+
+hr {
+    margin: 2rem 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.logo img{
+    width: 5rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    
+}
+
+.menu li {
+    margin-left: 30px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: var(--secondary); 
+}
+
+.menuBG {
+    background-color: var(--primary);
+    padding: 0;
+}
+
+/* Banner Section */
+.banner_home {
+    background-image:url("/assets/images/home-header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+    height: 787px;
+}
+
+.banner_text {
+    position: relative;
+    top:18.5rem;
+    bottom: 21.3rem;
+    text-align: end;
+}
+
+.banner_text p{
+    color: var(--primary-dark);
+    font-size: 2.25em;
+}
+
+.banner_text .button {
+    display: inline-block;
+    padding: 6px 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+/* About Section */
+.about {
+    background-color: var(--secondary);
+    text-align: center;
+}
+
+.about img {
+    width: 5.25rem;
+    color: var(--primary-dark);
+}
+
+.about p {
+    text-align:start;
+}
+
+/* Glass Section*/
+.glass img {
+    width: 100%;
+}
+
+.glass p {
+    color: var(--primary);
+    font-size: 3rem;
+    font-style: italic;
+    font-weight:800;
+    text-align: center;   
+}
+
+/* design-glass */
+.design-glass {
+    background-image: url('/assets/images/img_index-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+}
+
+.design-glass .content {
+    gap: 0;
+}
+
+.design-glass h2 {
+    color: #fff;
+}
+
+.design-glass img {
+    width: 100%;
+    display:block;
+}
+
+.design-glass p {
+    color: var(--primary);
+    font-size: 3rem;
+    font-style: italic;
+    font-weight:800;
+    text-align: center;   
+    background-color: #fff;
+}
+
+/* customer Section */
+.card {
+    width: 30%;
+    height: 511px;
+    border: 1px solid #ddd;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease; /* 添加平滑的放大效果 */
+}
+
+.card:hover{
+    transform: scale(1.05); /* 鼠標懸停時稍微放大 */
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.customer .c-text {
+    text-align: start;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 205px;;
+}
+
+.c-title {
+    font-weight: bolder;
+}
+
+.c-date {
+    font-size: 14px;
+    color: var(--glay-dark);
+    margin-top: auto;
+}
+
+/* contact section */
+.contact-us {
+    background-color: var(--secondary);
+}
+
+.contact-us .container {
+    max-width: 636px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.form-label {
+    margin-bottom: .5rem;
+}
+
+label {
+    display: inline-block;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.btn_submit {
+    width: 50%;
+    border: 0;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+.contact-us button {
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    padding: 2rem 0;
+    background-color:var(--primary);
+    color: #fff;
+}
+
+.menu img {
+    width: 50%;
+}
+
+footer .menu li {
+    margin:0 2rem 0 0;
+}
+
+footer img {
+    width: 2.25rem;
+    color: #fff;
+    margin-right: 1rem;
+}
+
+.contact a{
+    font-size: 2.25rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* RWD */
+/* 小螢幕 */
+@media (max-width: 768px) {
+    .col-2 {
+        width: 100%;
+    }
+    
+    .col-3 {
+        width: 100%;
+    }
+    
+    .col-4 {
+        width: 50%;
+    }
+}
